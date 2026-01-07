@@ -1,0 +1,49 @@
+Steps to Run the Code
+Step 1: Open the Environment
+Open Google Colab (recommended)
+OR
+Open Jupyter Notebook (with Python installed)
+
+Step 2: Install Required Libraries (only once)
+Run this cell before the code:
+!pip install hdbscan
+(Other libraries like numpy, pandas, sklearn, seaborn, matplotlib are usually preinstalled.)
+
+Step 3: Upload the Dataset
+Run the code cell
+When prompted with “Please upload your CSV”, upload:
+a CSV file, or
+a ZIP file containing a CSV
+The program automatically:
+Detects ZIP or CSV
+Extracts and loads the dataset
+
+Step 4: Data Preprocessing
+The code automatically:
+Selects important columns
+Removes missing values
+Converts numerical, categorical, and text features into numeric vectors
+
+Step 5: Feature Engineering & Dimensionality Reduction
+Numerical features are scaled
+Text is converted using TF-IDF
+Features are reduced using PCA for efficient clustering
+
+Step 6: Apply Clustering Algorithms
+K-Means clustering is applied with fixed clusters
+Chameleon-like clustering is implemented using HDBSCAN
+
+Step 7: Evaluate Clustering Performance
+Silhouette score is calculated for both methods
+Higher score indicates better clustering quality
+
+Step 8: Visualize Results
+The program generates:
+Cluster heatmap
+PCA-based scatter plots for both clustering methods
+
+Step 9: View Final Output
+
+Silhouette scores are displayed
+
+Final conclusion shows which clustering method performed better
